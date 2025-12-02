@@ -1,0 +1,31 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: helm-operator-help
+  namespace: helm-operator-test
+  labels:
+    app: helm-operator-test
+spec:
+  template:
+    metadata:
+      labels:
+        job-name: helm-operator-help
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: helm-operator
+        image: cleanstart/helm-operator:latest-dev
+        command: ["helm-operator"]
+        args:
+          - "--help"
+        securityContext:
+          runAsUser: 1000
+          runAsNonRoot: true
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+              - ALL
+  backoffLimit: 3
+  ttlSecondsAfterFinished: 300
+

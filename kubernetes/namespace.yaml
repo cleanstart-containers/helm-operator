@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: helm-operator-test
+  labels:
+    name: helm-operator-test
+    purpose: testing
+
