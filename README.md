@@ -4,7 +4,7 @@ The Helm Operator is a Kubernetes operator that automates the deployment and man
 
 **📌 Base Foundation:** Security-hardened, minimal base OS designed for enterprise containerized environments from CleanStart Registry.
 
-**Image Path:** `cleanstart/helm-operator`
+**Image Path:** `ghcr.io/cleanstart-containers/helm-operator`
 
 **Registry:** CleanStart Registry
 
@@ -62,15 +62,15 @@ Typical scenarios where this container excels:
 
 Download the container image from the registry:
 ```bash
-docker pull cleanstart/helm-operator:latest
-docker pull cleanstart/helm-operator:latest-dev
+docker pull ghcr.io/cleanstart-containers/helm-operator:latest
+docker pull ghcr.io/cleanstart-containers/helm-operator:latest-dev
 ```
 
 ### Basic Run
 
 Run the container with basic configuration:
 ```bash
-docker run -it --name helm-operator-test cleanstart/helm-operator:latest-dev
+docker run -it --name helm-operator-test ghcr.io/cleanstart-containers/helm-operator:latest-dev
 ```
 
 ### Production Deployment
@@ -81,21 +81,21 @@ docker run -d --name helm-operator-prod \
   --read-only \
   --security-opt=no-new-privileges \
   --user 1000:1000 \
-  cleanstart/helm-operator:latest
+  ghcr.io/cleanstart-containers/helm-operator:latest
 ```
 
 ### Volume Mount
 
 Mount local directory for persistent data:
 ```bash
-docker run -v $(pwd)/data:/data cleanstart/helm-operator:latest
+docker run -v $(pwd)/data:/data ghcr.io/cleanstart-containers/helm-operator:latest
 ```
 
 ### Inspection
 
 Inspect the environment:
 ```bash
-docker inspect cleanstart/helm-operator:latest
+docker inspect ghcr.io/cleanstart-containers/helm-operator:latest
 ```
 
 ---
@@ -153,8 +153,8 @@ CleanStart images support multiple architectures to ensure compatibility across 
 
 ### Multi-Platform Images
 ```bash
-docker pull --platform linux/amd64 cleanstart/helm-operator:latest
-docker pull --platform linux/arm64 cleanstart/helm-operator:latest
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/helm-operator:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/helm-operator:latest
 ```
 
 ---
