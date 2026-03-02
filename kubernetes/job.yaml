@@ -18,6 +18,7 @@ spec:
         command: ["helm-operator"]
         args:
           - "--help"
+          # - "--version"
         securityContext:
           runAsUser: 1000
           runAsNonRoot: true
