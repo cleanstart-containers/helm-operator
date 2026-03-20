@@ -59,15 +59,6 @@ Usage of helm-operator:
   ... (help text)
 ```
 
-## Trying Different Commands
-
-To try a different command, edit `job.yaml` and change the args to a valid subcommand. For example, to print version info using the `version` subcommand:
-
-```yaml
-args:
-  - "version"
-```
-
 Then re-apply and view logs:
 ```bash
 kubectl delete job helm-operator-help -n helm-operator-test --ignore-not-found
