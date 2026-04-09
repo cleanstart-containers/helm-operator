@@ -164,7 +164,7 @@ docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/helm-operator:l
 * **Official Documentation**: https://example.com/docs/helm-operator
 * **Provenance / SBOM / Signature**: https://images.cleanstart.com/images/helm-operator
 * **Docker Hub**: https://hub.docker.com/r/cleanstart/helm-operator
-* **CleanStart All Images**: https://images.cleanstart.com
+* **CleanStart All Images**: https://images.cleanstart.com/images/helm-operator/details
 * **CleanStart Community Images**: https://hub.docker.com/u/cleanstart
 
 
