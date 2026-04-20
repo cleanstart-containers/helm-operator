@@ -159,16 +159,21 @@ docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/helm-operator:l
 
 ---
 
-## Resources
-
-* **Official Documentation**: https://example.com/docs/helm-operator
-* **Provenance / SBOM / Signature**: https://images.cleanstart.com/images/helm-operator
-* **Docker Hub**: https://hub.docker.com/r/cleanstart/helm-operator
-* **CleanStart All Images**: https://images.cleanstart.com
-* **CleanStart Community Images**: https://hub.docker.com/u/cleanstart
-
-
----
+## Documentation Resources
+Essential links and resources for further information
+ 
+**CleanStart Images**: https://images.cleanstart.com/
+ 
+**Community Images**:
+**Docker Hub**: https://hub.docker.com/u/cleanstart<br>
+**GitHub**: https://github.com/cleanstart-containers<br>
+**AWS ECR Public Gallery**: https://gallery.ecr.aws/cleanstart/
+ 
+**Presence on Social Media**:
+**Community**: https://www.linkedin.com/groups/18324021/<br>
+**YouTube**: https://www.youtube.com/@CleanStartOfficial<br>
+ 
+**Contribute to Container Use Cases**: https://github.com/cleanstart-dev/cleanstart-use-cases/
 
 ## Vulnerability Disclaimer
 
